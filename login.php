@@ -1,31 +1,11 @@
 <?php
-	session_start();
 
-	if(isset($_POST['submit'])){
-
-		$uname 		= $_POST['userName'];
-		$password 	= $_POST['password'];
-
-    if(isset($_SESSION['userName']) && isset($_SESSION['password'])){
-
-			if($uname == $_SESSION['userName'] && $password == $_SESSION['password']){
-					$_SESSION['status'] = "OK";
-					header('location: homekkk.php');
-				}else{
-          echo "don't have any account!";
-				}
+    if(isset($_GET['msg'])){
+        echo $_GET['msg'];
     }
-    else{
-      echo "failed";
-    }
-
-
-  }
-
-
-
 
 ?>
+
 
 <html>
 	<head>

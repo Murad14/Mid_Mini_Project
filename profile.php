@@ -13,7 +13,7 @@
 <body>
 	<form>
         <table border=2>
-            <h1>USERS </h1>
+            <h1>Profile </h1>
             <tr>
                 <td>ID</td> 
                 <td>NAME</td>
